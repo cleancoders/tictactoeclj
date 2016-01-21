@@ -1,5 +1,6 @@
 (ns tictactoeclj.core-spec
-  (:require [speclj.core :refer :all]
+  (:require [clojure.string :as str]
+            [speclj.core :refer :all]
             [tictactoeclj.core :refer :all]))
 
 (defn- char->mark [char]
@@ -11,6 +12,15 @@
 (defn- ->board [board-str]
   (map char->mark
        (filter #(not= \| %) board-str)))
+
+(defn- row-> [row]
+  (apply str
+         (map #(case % :x \x :o \o \.) row)))
+
+(defn board-> [board]
+  (->> (partition 3 board)
+       (map row->)
+       (str/join "|")))
 
 (describe "TTT"
   (context "board"
@@ -46,6 +56,10 @@
       (should= []
                (possible-moves
                  (->board "oox|oxo|xox"))))
-    )
+
+    (it "records moves"
+      (should= "x..|...|..."
+               (board->
+                 (move :x 0 (->board "...|...|..."))))))
 
   )

@@ -27,3 +27,6 @@
 
 (defn possible-moves [board]
   (filter #(nil? (nth board %)) (range 9)))
+
+(defn move [player index board]
+  (assoc (vec board) index player))
