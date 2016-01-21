@@ -2,19 +2,38 @@
   (:require [speclj.core :refer :all]
             [tictactoeclj.core :refer :all]))
 
-(defn ->board [board-str]
-  (take 9 (repeat nil))
-  )
+(defn- char->mark [char]
+  (case char
+    \x :x
+    \o :o
+    nil))
+
+(defn- ->board [board-str]
+  (map char->mark
+       (filter #(not= \| %) board-str)))
 
 (describe "a test"
   (context "board"
     (it "empty board is not a win for x"
-      (should= false (win? :x (->board "...|...|...")))
-      (should= false (win? :o (->board "...|...|..."))))
+      (should-not (win? :x (->board "...|...|...")))
+      (should-not (win? :o (->board "...|...|..."))))
 
     (it "win for x rows"
-      (should= true (win? :x (->board "xxx|...|...")))
-      (should= true (win? :x (->board "xxx|...|...")))
-      (should= true (win? :x (->board "xxx|...|..."))))
+      (should (win? :x (->board "xxx|...|...")))
+      (should (win? :x (->board "...|xxx|...")))
+      (should (win? :x (->board "...|...|xxx")))
+      (should-not (win? :x (->board "...|ooo|...")))
+      (should-not (win? :x (->board "..x|x..|..x"))))
+
+    (it "win for x columns"
+      (should (win? :x (->board "x..|x..|x..")))
+      (should (win? :x (->board ".x.|.x.|.x.")))
+      (should (win? :x (->board "..x|..x|..x")))
+      (should-not (win? :x (->board "..o|..o|..o")))
+      (should-not (win? :x (->board "..x|..x|.x.")))
+
+      )
     )
+
+
   )
