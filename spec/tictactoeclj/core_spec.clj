@@ -12,7 +12,7 @@
   (map char->mark
        (filter #(not= \| %) board-str)))
 
-(describe "a test"
+(describe "TTT"
   (context "board"
     (it "empty board is not a win for x"
       (should-not (win? :x (->board "...|...|...")))
@@ -30,10 +30,22 @@
       (should (win? :x (->board ".x.|.x.|.x.")))
       (should (win? :x (->board "..x|..x|..x")))
       (should-not (win? :x (->board "..o|..o|..o")))
-      (should-not (win? :x (->board "..x|..x|.x.")))
+      (should-not (win? :x (->board "..x|..x|.x."))))
 
-      )
+    (it "win for x diagonals"
+      (should (win? :x (->board "x..|.x.|..x")))
+      (should (win? :x (->board "..x|.x.|x..")))
+      (should-not (win? :x (->board "o..|.o.|..o"))))
+
+    (it "gives me possible moves"
+      (should= [0 1 2 3 4 5 6 7 8]
+               (possible-moves (->board "...|...|...")))
+      (should= [0 1 2 3]
+               (possible-moves
+                 (->board "...|.xo|xox")))
+      (should= []
+               (possible-moves
+                 (->board "oox|oxo|xox"))))
     )
-
 
   )

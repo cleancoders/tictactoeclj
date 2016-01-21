@@ -31,8 +31,8 @@
           <file leaf-file-name="core_spec.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/tictactoeclj/core_spec.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.62994653">
-                  <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+                <state vertical-scroll-proportion="0.9550802">
+                  <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -45,8 +45,8 @@
           <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/tictactoeclj/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.22352941">
-                  <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.568984">
+                  <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -69,8 +69,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/spec/tictactoeclj/core_spec.clj" />
         <option value="$PROJECT_DIR$/src/tictactoeclj/core.clj" />
+        <option value="$PROJECT_DIR$/spec/tictactoeclj/core_spec.clj" />
       </list>
     </option>
   </component>
@@ -735,12 +735,12 @@
       <created>1453392768608</created>
       <option name="number" value="Default" />
       <updated>1453392768608</updated>
-      <workItem from="1453392769825" duration="3656000" />
+      <workItem from="1453392769825" duration="5137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3656000" />
+    <option name="totallyTimeSpent" value="5137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
@@ -757,7 +757,7 @@
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -799,18 +799,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tictactoeclj/core_spec.clj">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.7.0-RC2/clojure-1.7.0-RC2.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62994653">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.6983957">
+          <caret line="7031" column="4" selection-start-line="7031" selection-start-column="4" selection-end-line="7031" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tictactoeclj/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22352941">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.568984">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tictactoeclj/core_spec.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9550802">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding />
         </state>
       </provider>
